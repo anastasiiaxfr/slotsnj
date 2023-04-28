@@ -1,0 +1,123 @@
+################################# Banner ##################################
+banner:
+  bg_image: "images/backgrounds/bg_hero4.jpg"
+  title : "New Jersey Casino List "
+  content : ""
+            
+  # button primary
+  button_solid:
+    enable : true
+    label : "Read More"
+    link : "NJ Casinos"
+
+  # button outline
+  button_outline:
+    enable : false
+    label : "Contact Us"
+    link : "contact"
+
+##################### call to action ########################################
+cta:
+  enable : true
+  title : "Top 5 Casinos New Jersey"
+  button:
+    enable : true
+    label : "Read more"
+    link : "/#top-casinos"
+
+################################## about ####################################
+legal:
+  enable: true
+  image : "images/about/casino1.png"
+  # content supports markdown, make sure to give enough space, otherwise markdown will not work properly
+  content : "
+
+  ##  ARE NJ ONLINE CASINOS LEGAL?
+
+  Since the legalization of online gambling in the state of New Jersey only happened recently, new players are appearing in the field left and right. Not to mention new casinos opening up in the last few years. That means that newbies always have some questions to ask, to make sure that they get the best deal out of NJ online casino deposit and their promo code.
+  "
+  button:
+    enable : true
+    label : "know more"
+    link : "about"
+
+
+################################## secure ####################################
+secure:
+  enable: true
+  image : "images/about/secure.jpg"
+  # content supports markdown, make sure to give enough space, otherwise markdown will not work properly
+  content : "
+  ##  ARE NJ CASINOS SECURE?
+
+  As it happens, to be recognized as a legal online NJ casino, they need to follow rather strict and regimented regulations of the NJ Division of Gaming Enforcement. Basically, they need to be affiliated with a land-based NJ casino, only provide their services for people physically in NJ, and so on. So far, every known casino follows DGE directives, so you can rest assured that they are secured.
+  "
+  button:
+    enable : true
+    label : "know more"
+    link : "about"
+
+
+################################# testimonial ################################
+testimonial:
+  enable : true
+  title : "What People Say?"
+  testimonial_item:
+    # testimonial item loop
+    - name : "John Doe"
+      image : "images/testimonial/client-1.jpg" # image size 100px * 100px
+      designation : "Web Developer"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptate modi sunt placeat in vel
+              illo dolorem, atque maxime voluptates optio fugit iure cum ipsa quo quaerat"
+              
+    # testimonial item loop
+    - name : "Jinat Rin"
+      image : "images/testimonial/client-2.jpg" # image size 100px * 100px
+      designation : "UI/UX Designer"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptate modi sunt placeat in vel
+              illo dolorem, atque maxime voluptates optio fugit iure cum ipsa quo quaerat! Veritatis, modi. Laudantium
+              provident deleniti earum voluptas delectus, labore dolor dolorem amet expedita."
+              
+    # testimonial item loop
+    - name : "Mark Din"
+      image : "images/testimonial/client-3.jpg" # image size 100px * 100px
+      designation : "Web Developer"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptate modi sunt placeat in velillo dolorem, atque maxime voluptates optio fugit iure cum ipsa quo quaerat! Veritatis, modi."
+
+
+################################# Service #####################################
+service:
+  enable : true
+  title : "BEST CASINO GAMES"
+  service_item:
+    # Service item loop
+    - title : "Slots"
+      icon : "images/games/slots.png" # here we use themefy icon pack : https://themify.me/themify-icons
+      content : "Top game developers and providers are companies like NYX Gaming, Amaya Gambling, IGT, and High 5, with some European companies mixed in. Ther are both standard and progressive slots available, with almost all of them featuring bonus games."
+      
+    # Service item loop
+    - title : "Table games"
+      icon : "images/games/table.png" # here we use themefy icon pack : https://themify.me/themify-icons
+      content : "Lany self-respected casino has at least one of the classic table games, like blackjack, baccarat, roulette, or craps. Some casinos also branch out in carnival games, like Pai Gow Poker and Let it Ride, and even Lottos."
+      
+    # Service item loop
+    - title : "Video poker"
+      icon : "images/games/poker.png" # here we use themefy icon pack : https://themify.me/themify-icons
+      content : "The main attraction of many online casinos, there are many varieties of viso poker available throughout NJ, in both the single and multi-line forms. IGT — under the brand name of Game King — provides most of the poker games in the state."
+      
+    # Service item loop
+    - title : "Slingo"
+      icon : "images/games/baccarat.png" # here we use themefy icon pack : https://themify.me/themify-icons
+      content : "A casino classic, it can be enjoyed in the online form as well, either through the arcade-style of a game or as a scratch-off ticket."
+      
+    # Service item loop
+    - title : "Online sports"
+      icon : "images/games/dice.png" # here we use themefy icon pack : https://themify.me/themify-icons
+      content : "A relatively recent trend only employed in a few casinos, it becomes more popular for its graphics and engaging nature. Basically, it is a simulated sports event with random results generator, and advanced graphics."
+      
+######################### Clients logo slider ################################
+clients_logo:
+  enable : true
+  title: "LIST OF ALL LEGIT CASINOS IN NEW JERSEY 2019"
+  content: "In that section, you can see a compiled list of all legal NJ online casinos. To find out more about them, just click on the name of a casino to read a comprehensive guide about its’ payout rates, number and variety of games, bonus codes and promotions, and loyalty programs (if there is any). And if you like what you’ve read and want to go right to playing, you will get all the info on starter’s bonuses and promos as well."
+  # logo comes from "config.toml" file

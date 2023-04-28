@@ -1,0 +1,298 @@
+######################## default configuration ####################
+baseURL = "/"
+title = "slots-nj"
+# theme = "slots-nj-hugo"
+# post pagination
+paginate = "12"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "slots-nj" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/match-height/jquery.matchHeight-min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific.popup.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/google-map/gmap.js"
+
+############################## navigation ###############################
+# main menu
+[[menu.main]]
+name = "NJ Casinos"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "Reviews"
+URL = "reviews"
+weight = 2
+
+[[menu.main]]
+weight = 3
+name = "Real money Casinos"
+URL = "real-money-casinos"
+
+
+[[menu.main]]
+name = "Blacklist"
+URL = "blacklisted-casinos"
+weight = 4
+
+[[menu.main]]
+name = "Best casino games"
+URL = "best-casino-games"
+weight = 5
+
+[[menu.main]]
+name = "News"
+URL = "news"
+weight = 6
+
+[[menu.main]]
+name = "Betting"
+URL = "betting"
+weight = 7
+
+# footer menu
+[[menu.footer]]
+name = "Latest News"
+URL = "/news/"
+weight = 1
+
+[[menu.footer]]
+name = "Betting"
+URL = "/betting/"
+weight = 2
+
+[[menu.footer]]
+name = "Casinos"
+URL = "/reviews/"
+weight = 3
+
+[[menu.footer]]
+name = "Games"
+URL = "/best-casino-games/"
+weight = 4
+
+[[menu.footer]]
+name = "Privacy Policy"
+URL = "/policy/"
+weight =0
+
+#################### default parameters ################################
+[params]
+tagsLimit = 15
+logo = "images/logo.png"
+logo_w = "150"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Anastasiia_Berest | xfr"
+# contact info
+address = "JERSEY CITY, 111 TOWN SQUARE PL"
+mobile = "+201-210-3656"
+email = "slotso@nj.com"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# Google Analitycs
+google_analitycs_id = "" # your id
+# search
+search = true
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[params.navigation_button]
+enable = true
+label = "get a quote"
+link = "contact"
+
+# google map
+[params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+
+###################### Clients logo slider ###############################
+[[params.clients_logo]]
+logo = "images/casino/888-casino.png"
+
+[[params.clients_logo]]
+logo = "images/casino/betfair.png"
+
+[[params.clients_logo]]
+logo = "images/casino/borgata.png"
+
+[[params.clients_logo]]
+logo = "images/casino/caesars.png"
+
+[[params.clients_logo]]
+logo = "images/casino/draft-kings.png"
+
+[[params.clients_logo]]
+logo = "images/casino/golden-nugget.png"
+
+[[params.clients_logo]]
+logo = "images/casino/hardrock.png"
+
+[[params.clients_logo]]
+logo = "images/casino/harrahs.png"
+
+[[params.clients_logo]]
+logo = "images/casino/mohegan-sun.png"
+
+[[params.clients_logo]]
+logo = "images/casino/ocean.png"
+
+[[params.clients_logo]]
+logo = "images/casino/pala.png"
+
+[[params.clients_logo]]
+logo = "images/casino/party.png"
+
+[[params.clients_logo]]
+logo = "images/casino/playmgm.png"
+
+[[params.clients_logo]]
+logo = "images/casino/pokerstars.png"
+
+[[params.clients_logo]]
+logo = "images/casino/resorts.png"
+
+[[params.clients_logo]]
+logo = "images/casino/scores.png"
+
+[[params.clients_logo]]
+logo = "images/casino/sugarhouse.png"
+
+[[params.clients_logo]]
+logo = "images/casino/tropicana.png"
+
+[[params.clients_logo]]
+logo = "images/casino/virgin.png"
+
+############################# social icon #################################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-instagram" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+################################### Top 5 Casinos New Jersey ################################### 
+[[params.top_casino]]
+title = "Virgin"
+img = "/images/casino/virgin.png"
+first_deposit_bonus = "100$"
+bonus = "30$"
+games = ["blackjack", "slots", "poker", "live-dealers"]
+features = ["Free spins", "1st Deposit bonus", "Community jackpot"]
+review = "/reviews/virgin-casino/"
+visit = "/reviews/virgin-casino/"
+
+[[params.top_casino]]
+title = "Slotman"
+img = "/images/casino/slotman.png"
+
+first_deposit_bonus = "1000$"
+bonus = "150$"
+games = ["blackjack", "slots", "poker", "live-dealers"]
+features = ["Free spins", "1st Deposit bonus", "Community jackpot"]
+review = "/reviews/slotman/"
+visit = "/reviews/slotman/"
+
+[[params.top_casino]]
+title = "Tropicana"
+img = "/images/casino/tropicana.png"
+
+first_deposit_bonus = "100$"
+bonus = "20$"
+games = ["blackjack", "slots", "poker", "live-dealers"]
+features = ["Free spins", "1st Deposit bonus", "Community jackpot"]
+review = "/reviews/tropicana/"
+visit = "/reviews/tropicana/"
+
+[[params.top_casino]]
+title = "Golden Nugget"
+img = "/images/casino/golden-nugget.png"
+
+first_deposit_bonus = "1000$"
+bonus = "20$"
+games = ["blackjack", "slots", "poker", "live-dealers"]
+features = ["Sign up Bonus", "1st Deposit bonus", "24/7 Dealers"]
+review = "/reviews/golden-nugget/"
+visit = "/reviews/golden-nugget/"
+
+[[params.top_casino]]
+title = "Betfair"
+img = "/images/casino/betfair.png"
+
+first_deposit_bonus = "2500$"
+bonus = "30$"
+games = ["blackjack", "slots", "poker", "live-dealers"]
+features = ["Sign up Bonus", "1st Deposit bonus", "A lot of games"]
+review = "/reviews/betfair/"
+visit = "/reviews/betfair/"
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+home = "Home"
+# footer content
+footer_content = ""
+
