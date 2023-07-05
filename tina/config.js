@@ -71,6 +71,8 @@ export default defineConfig({
               timeFormat: "hh:mm A"
             },
           },
+
+
           {
             type: 'image',
             label: 'Thumbnail',
@@ -140,6 +142,13 @@ export default defineConfig({
             type: "reference",
             collections: ["author"]
           },
+
+          {
+            label: "Category",
+            name: "categories",
+            type: "reference",
+            collections: ["categories"]
+          },
           
           {
             type: "rich-text",
@@ -157,7 +166,20 @@ export default defineConfig({
         fields: [{
             type: "string",
             name: "name",
-            label: "Name",
+            label: "Author Name",
+            isTitle: true,
+            required: true,
+          }]
+      },
+
+      {
+        name: "categories",
+        label: "Categories",
+        path: "content/english/categories",
+        fields: [{
+            type: "string",
+            name: "name",
+            label: "Category Name",
             isTitle: true,
             required: true,
           }]
