@@ -1,4 +1,0 @@
----
-name: Anastasiia Berest
----
-

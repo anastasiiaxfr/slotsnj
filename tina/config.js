@@ -169,7 +169,8 @@ export default defineConfig({
             label: "Author Name",
             isTitle: true,
             required: true,
-          }]
+          }
+        ]
       },
 
       {
