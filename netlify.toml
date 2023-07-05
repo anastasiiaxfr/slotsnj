@@ -1,6 +1,16 @@
 [build]
   publish = "/"
-  command = "npx tinacms build && hugo"
+  command = "tinacms build && hugo --gc --minify"
 
 [build.environment]
 HUGO_VERSION = "v0.111.3"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+
+[[headers]]
+  for = "*.(css|js|woff|woff2|ttf|png|jpg|jpeg)"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
