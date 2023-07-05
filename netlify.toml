@@ -1,6 +1,6 @@
 [build]
-  publish = "public"
-  command = "npm tinacms build && hugo --gc --minify"
-  
+  publish = "/"
+  command = "npx tinacms build && hugo"
+
 [build.environment]
-  HUGO_VERSION = "v0.111.3"
+HUGO_VERSION = "v0.111.3"

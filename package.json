@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx tinacms dev -c \"hugo server -D -p 1313\"",
+    "build": "npx tinacms build && hugo --gc --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
