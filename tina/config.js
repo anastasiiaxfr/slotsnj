@@ -33,10 +33,35 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "url",
+            label: "Slug",
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+          },
+         
+          {
+            label: 'Type',
+            name: 'type',
+            type: 'string',
+            list: true,
+            required: true,
+            options: [
+              {
+                value: 'post',
+                label: 'Post',
+              },
+             
+            ],
+          },
+          {
             label: "Author",
             name: "author",
             type: "reference",
-            collections: ["authors"]
+            collections: ["author"]
           },
           {
             type: "datetime",
@@ -72,10 +97,50 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "string",
+            name: "url",
+            label: "Slug",
+          },
+          {
+            type: "string",
+            name: "excerpt",
+            label: "Excerpt",
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "DateTime",
+            ui: {
+              timeFormat: "HH:mm"
+            },
+          },
+          {
+            label: 'Type',
+            name: 'type',
+            type: 'string',
+            list: true,
+            required: true,
+            options: [
+              {
+                value: 'post',
+                label: 'Post',
+              },
+             
+            ],
+          },
+          {
             type: 'image',
             label: 'Thumbnail',
             name: 'imgSrc',
           },
+          
+          {
+            label: "Author",
+            name: "author",
+            type: "reference",
+            collections: ["author"]
+          },
+          
           {
             type: "rich-text",
             name: "body",
@@ -86,7 +151,7 @@ export default defineConfig({
       },
 
       {
-        name: "authors",
+        name: "author",
         label: "Authors",
         path: "content/english/author",
         fields: [{
