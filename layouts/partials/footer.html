@@ -14,7 +14,7 @@
             <h5 class="text-white mb-4">{{ i18n "about_us"}}</h5>
             <p class="text-white content">{{ .Site.Params.footer_content | markdownify }}</p>
           </div> -->
-          <div class="row mx-0">
+          <div class="row mx-0 justify-content-center">
             <ul class="list-unstyled d-flex">
               {{ range .Site.Menus.footer }}
               <li class="text-white pr-3"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
