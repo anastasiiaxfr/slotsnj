@@ -46,7 +46,13 @@
     {{ "<!-- post-item -->" | safeHTML }}
     {{ range first 3 ( where .Site.Pages "Type" "post" )}}
     <div class="media border-bottom border-color pb-3 mb-3">
-      <a href="{{ .Permalink }}"><img class="mr-3 post-thumb-sm" src="{{ if .Params.Image }} {{ .Params.Image | relURL }} {{ else }}  {{ `/images/news/news.jpg` | relURL }} {{ end }}"></a>
+      <a href="{{ .Permalink }}">
+        {{ if .Params.Image }}
+        <img class="mr-3 post-thumb-sm" src="{{ .Params.Image | relURL }}">
+        {{ else }}
+        <img class="mr-3 post-thumb-sm" src="{{ `/images/news/news.jpg` | relURL }}">
+        {{ end }}
+        </a>
       <div class="media-body">
         <a href="{{ .Permalink }}">
           <h5 class="mt-0">{{ .Title }}</h5>

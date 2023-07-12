@@ -1,7 +1,7 @@
 <!-- footer -->
 <footer class="footer bg-cover overlay overflow-hidden" style="background-image: url('{{`images/backgrounds/footer.jpg` | relURL}}');">
   <div class="container" style="position: relative; z-index: 1;">
-    <div class="row justify-content-center py-3">
+    <div class="row justify-content-center py-3 mx-auto">
 
       
 <div class="w-100 mb-3">
@@ -14,10 +14,10 @@
             <h5 class="text-white mb-4">{{ i18n "about_us"}}</h5>
             <p class="text-white content">{{ .Site.Params.footer_content | markdownify }}</p>
           </div> -->
-          <div class="row mx-0 justify-content-center">
-            <ul class="list-unstyled d-flex">
+          <div class="row mx-0 text-center justify-content-center footer__btm">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
               {{ range .Site.Menus.footer }}
-              <li class="text-white pr-3"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+              <li class="text-white"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
               {{ end }}
             </ul>
 

@@ -7,8 +7,10 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-7 order-2 order-lg-1 content">
-        {{ with .Params.Image }}
-        <img src="{{ . | absURL }}" class="img-fluid mr-5 mb-5">
+        {{ if .Params.Image }}
+        <img class="img-fluid mr-5 mb-5" src="{{ .Params.Image | relURL }}">
+        {{ else }}
+        <img class="img-fluid mr-5 mb-5" src="{{ `/images/news/news.jpg` | relURL }}">
         {{ end }}
         {{ .Content }}
       </div>

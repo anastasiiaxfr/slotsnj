@@ -2,8 +2,8 @@
 
 
 
-<div class="bg-secondary py-lg-5">
-  <div class="p-lg-2"></div>
+<div class="bg-secondary py-5">
+  <div class="p-2"></div>
 </div>
 {{ partial "_breadcrumbs.html" . }}
 <section class="section-sm">
@@ -19,7 +19,7 @@
         <div class="mb-4">By <a class="text-dark font-weight-bold"
             href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a> / on
           <strong class="text-dark">{{ .PublishDate.Format "02 Jan, 2006" }}</strong></div>
-        <div class="content">{{ .Content }}</div>
+        <div class="content">{{ .Content  }}</div>
 
         <!-- comments -->
         {{ if .Site.DisqusShortname }}

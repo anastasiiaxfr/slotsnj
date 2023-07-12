@@ -54,6 +54,8 @@ a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 
+  
+
   &-sm {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -64,8 +66,19 @@ a:hover {
     padding-bottom: 150px;
   }
 
+  @include mobile {
+    &, &-sm {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+  }
+
   &-title {
     margin-bottom: 50px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
   }
 
   &-content {
@@ -381,6 +394,14 @@ textarea.form-control {
     transform: scale(1.1);
   }
 
+  &-table {
+    td {
+        .btn {
+            margin: 5px auto;
+        }
+    }
+  }
+
 }
 
 .client-logo-slider img {
@@ -391,10 +412,27 @@ textarea.form-control {
 }
 
 .breadcrumb {
-  margin-bottom: 0;
-  background: transparent;
+    background-color: transparent;
 
-  &__container {
-    background-color: #e9ecef;
-  }
+    & > * {
+        text-transform: capitalize;
+    }
+
+    &__container {
+        background-color: $light;
+    }
+}
+
+.footer .list-unstyled {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+}
+
+.footer__btm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
 }

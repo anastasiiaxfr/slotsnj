@@ -1,13 +1,12 @@
 ######################## default configuration ####################
 baseURL = "/"
-title = "slots-nj"
-# theme = "slots-nj-hugo"
+title = ""
 # post pagination
 paginate = "12"
 # post excerpt
 summaryLength = "10"
 # disqus short name
-disqusShortname = "slots-nj" # get your shortname form here : https://disqus.com
+disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -120,7 +119,7 @@ logo_w = "150"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Anastasiia_Berest | xfr"
+author = "xfr"
 # contact info
 address = "JERSEY CITY, 111 TOWN SQUARE PL"
 mobile = "+201-210-3656"
@@ -290,9 +289,19 @@ visit = "/reviews/betfair/"
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
-contentDir = "content/english"
+contentDir = "content/en"
 weight = 1
 home = "Home"
 # footer content
 footer_content = ""
 
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/fr"
+weight = 2
+home = "Accueil"
+# footer content
+footer_content = ""
