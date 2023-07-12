@@ -426,7 +426,8 @@ textarea.form-control {
 .footer .list-unstyled {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    column-gap: 16px;
+    row-gap: 8px;
     margin: 0;
 }
 
