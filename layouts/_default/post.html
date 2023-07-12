@@ -11,12 +11,12 @@
       <strong class="text-dark">{{ .PublishDate.Format "02 Jan, 2006" }}</strong></div>
     <h4>
       {{ if .Params.url }}
-      <a href="{{ .Params.url }}">{{ .Title }}</a>
+      <a href="{{ .Params.url }}">{{ .Title | truncate 50 }}</a>
       {{ else }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title | truncate 50 }}</a>
       {{ end }}
     </h4>
-    <p>{{ .Summary }}...</p>
+    <p>{{ .Summary | truncate 100 }}...</p>
     {{ if .Params.url }}
     <a href="{{ .Params.url }}" class="btn btn-primary btn-sm">{{ i18n "read_more"}}</a>
     {{ else }}

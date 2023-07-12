@@ -6,7 +6,6 @@ date: 2019-12-12T00:00:00+00:00
 excerpt: 'Europe&rsquo;s gross gaming revenue (GGR) grew 11% last year to &euro;22'
 
 
-image : images/news/2019/12/Europeanflag.jpg
 categories:
   - news
 tags:
